@@ -1,0 +1,819 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>CGM Lab</title>
+    <style type="text/css">
+      body {
+      background-color: #C8C8C8;
+      margin: 0px;
+      padding: 0px;
+      font-family:Arial, Helvetica, sans-serif;
+      font-size:12px;
+      }
+      .picStyle
+      {
+      margin-top:10px;	
+      }
+      .picCaptionStyle
+      {
+      }
+      .newsTitleStyle
+      {
+      margin-left:7px;
+      }
+      a:link {
+      color: #FFFFFF;
+      text-decoration: none;
+      }
+      a:visited {
+      color: #FFFFFF;
+      text-decoration: none;
+      }
+      a:hover {
+      color: #BD3C3F;
+      text-decoration: none;
+      }
+      a:active {
+      color: #BD3C3F;
+      text-decoration: none;
+      }
+      .picCaptionStyle a:link {color: #000000;	text-decoration: none;}
+      .picCaptionStyle a:visited {color: #000000;	text-decoration: none;}
+      .picCaptionStyle a:active {color: #BD3C3F;text-decoration: none;}
+      .picCaptionStyle a:hover {color: #BD3C3F;text-decoration: none;}
+      .button {
+            display: inline-block;
+            border-radius: 4px;
+            background-color: #87CEEB; /* 改為淡藍色 */
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 20px; /* 字體大小調小 */
+            padding: 15px 20px; /* 調整內邊距 */
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+            text-decoration: none;
+        }
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+        .button span:after {
+            content: '\00bb'; /* CSS Entities */
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+        .button:hover span {
+            padding-right: 25px;
+        }
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+    </style>
+  </head>
+  <body>
+    <table width="1110px" align="center" border="0" cellpadding="0" cellspacing="0" >
+      <tr>
+        <td width="50" rowspan="2"></td>
+        <td colspan="2" rowspan="2"><img src="Image/BackGroundLeftUp.png" width="30" height="30" /></td>
+        <td width="950" height="10" style="background-image:url(Image/BackGroundUp2.png)"></td>
+        <td colspan="2" rowspan="2"><img src="Image/BackGroundRightUp.png" width="30" height="30" /></td>
+        <td width="50" rowspan="2"></td>
+      </tr>
+      <tr>
+        <td   height="20" bgcolor="#FFFFFF"></td>
+      </tr>
+      <tr>
+        <td width="50">&nbsp;</td>
+        <td width="11" style="background-image:url(Image/BackGroundLeft2.png)" ></td>
+        <td bgcolor="#FFFFFF" colspan = "3">
+          <table width="988" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td>
+                <div style="margin-bottom:5px"><img src="Image/logo.png" width="429" height="52" /></div>
+              </td>
+            </tr>
+            <tr>
+              <td bgcolor="#000000">
+                <script src="./js/mainMenu.js"></script>
+              </td>
+            </tr>
+            <tr>
+              <td bgcolor="#333333"><img src="Image/bar1.png" width="988" height="186" /></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <!--內文區-->
+              <td align="center">
+                <table width="950"  cellpadding="0" cellspacing="0">
+                  <!-- <tr align="center">
+                    <td width="237">
+                      <div class="picStyle"><a href="" target="_blank"><img src="../photo/underconstruction.jpg" width="219" height="164" border="0" /></a></div>
+                    </td>
+                    <td width="237">
+                      <div class="picStyle"><a href="" target="_blank"><img src="../photo/underconstruction.jpg" width="219" height="164" border="0" /></a></div>
+                    </td>
+                    <td width="237">
+                      <div class="picStyle"><a href="" target="_blank"><img src="../photo/underconstruction.jpg" width="219" height="164" border="0" /></a></div>
+                    </td>
+                    <td width="237">
+                      <div class="picStyle"><a href="" target="_blank"><img src="" width="219" height="164" border="0" /></a></div>
+                    </td>
+                  </tr>
+                  -->
+
+                  <!--
+                  <tr align="center">
+                    <td >
+                      <div class="picCaptionStyle"><a href="" target="_blank"> </a></div>
+                    </td>
+                    <td >
+                      <div class="picCaptionStyle"><a href="" target="_blank"></a></div>
+                    </td>
+                    <td >
+                      <div class="picCaptionStyle"><a href="" target="_blank"> </a></div>
+                    </td>
+                    <td>
+                      <div class="picCaptionStyle"><a href="" target="_blank"></a></div>
+                    </td>
+                  </tr> 
+                  -->
+
+                  <button class="button">
+                    <a href="./album/album.html" target="_blank" rel="noopener noreferrer">
+                        <span>以後的活動都會放在這裡喔</span>
+                    </a>
+                </button>
+
+                  <tr align="center">
+                    <td width="237">
+                      <div class="picStyle"><a href="..\photo\CGMLAB慶祝老師生日快樂20231109" target="_blank"><img src="..\photo\CGMLAB慶祝老師生日快樂20231109\cover.jpg" width="219" height="164" border="0" /></a></div>
+                    </td>
+                    <td width="237">
+                      <div class="picStyle"><a href="..\photo\CGMLAB教師節活動(燒肉火鍋)20231020" target="_blank"><img src="..\photo\CGMLAB教師節活動(燒肉火鍋)20231020\images\s__114786340_0.jpg" width="219" height="164" border="0" /></a></div>
+                    </td>
+                    <td width="237">
+                      <div class="picStyle"><a href="..\photo\CGMLab迎新送舊(涮乃葉)20230831" target="_blank"><img src="..\photo\CGMLab迎新送舊(涮乃葉)20230831\images\1.jpg" width="219" height="164" border="0" /></a></div>
+                    </td>
+                    <td width="237">
+                      <div class="picStyle"><a href="../photo/CGW2023NCUT/" target="_blank"><img src="../photo/CGW2023NCUT/images/cgw_23__1.jpg" width="219" height="164" border="0" /></a></div>
+                    </td>
+                  </tr>               
+
+                  <tr align="center">
+                    <td >
+                      <div class="picCaptionStyle"><a href="" target="_blank">CGMLAB慶祝老師生日快樂20231109</a></div>
+                    </td>
+                    <td >
+                      <div class="picCaptionStyle"><a href="" target="_blank">CGMLAB教師節活動(燒肉火鍋)20231020</a></div>
+                    </td>
+                    <td >
+                      <div class="picCaptionStyle"><a href="" target="_blank">CGMLab迎新送舊(涮乃葉)20230831</a></div>
+                    </td>
+                    <td>
+                      <div class="picCaptionStyle"><a href="../photo/CGW2023NCUT/" target="_blank">CGW 23' (國立勤益科技大學)</a></div>
+                    </td>
+                  </tr> 
+                  
+
+
+                  <tr align="center">
+                    <td width="237">
+                      <div class="picStyle"><a href="../photo/20230113_Pictures" target="_blank"><img src="../photo/20230113_Pictures/images/s__109289514.jpg" width="219" height="164" border="0" /></a></div>
+                    </td>
+                    <td width="237">
+                      <div class="picStyle"><a href="../photo/ProfessorYangHBD20221110" target="_blank"><img src="../photo/ProfessorYangHBD20221110/images/s__45727810.jpg" width="219" height="164" border="0" /></a></div>
+                    </td>
+                    <td width="237">
+                      <div class="picStyle"><a href="../photo/2022_Happy_Teacher_DAY" target="_blank"><img src="../photo/2022_Happy_Teacher_DAY/images/s__103194644.jpg" width="219" height="164" border="0" /></a></div>
+                    </td>
+                    <td width="237">
+                      <div class="picStyle"><a href="../photo/CGMLab視覺化研討會(中研院)" target="_blank"><img src="../photo/CGMLab視覺化研討會(中研院)/images/3.jpg" width="219" height="164" border="0" /></a></div>
+                    </td>
+                  </tr>
+                  </tr>
+                  <tr align="center">
+                    <td >
+                      <div class="picCaptionStyle"><a href="../photo/20230113_Pictures/index.html" target="_blank">CGMLab尾牙(20230113)</a></div>
+                    </td>
+                    <td>
+                      <div class="picCaptionStyle"><a href="../photo/ProfessorYangHBD20221110/index.html" target="_blank">CGMLab慶祝老師生日快樂(20221110)</a></div>
+                    </td>
+                    <td>
+                      <div class="picCaptionStyle"><a href="../photo/2022_Happy_Teacher_DAY/index.html" target="_blank">CGMLab教師節活動(燒肉火鍋)</a></div>
+                    </td>
+                    <td>
+                      <div class="picCaptionStyle"><a href="../photo/CGMLab視覺化研討會(中研院)/index.html" target="_blank">CGMLab視覺化研討會(中研院)</a></div>
+                    </td>
+                  </tr> 
+
+
+                  <tr align="center">
+                    <td width="237">
+                      <div class="picStyle"><a href="../photo/CGMLab迎新送舊(涮乃葉)/index.html" target="_blank"><img src="../photo/CGMLab迎新送舊(涮乃葉)/images/15.jpg" width="219" height="164" border="0" /></a></div>
+                    </td>
+                    <td width="237">
+                      <div class="picStyle"><a href="../photo/CGW2022(外貿協會台北國際會議中心 (TICC))/index.html" target="_blank"><img src="../photo/CGW2022(外貿協會台北國際會議中心 (TICC))/S__76226568.jpg" width="219" height="164" border="0" /></a></div>
+                    </td>
+                    <td width="237">
+                      <div class="picStyle"><a href="../photo/CGMLab尾牙(鼎豐鴛鴦麻辣火鍋)20220120/index.html" target="_blank"><img src="../photo/CGMLab尾牙(鼎豐鴛鴦麻辣火鍋)20220120/thumbnails/20220120_213326.jpg" width="219" height="164" border="0" /></a></div>
+                    </td>
+                    <td width="237">
+                      <div class="picStyle"><a href="../photo/CGMLAB教師節活動(戰醬燒肉)20211007/index.html" target="_blank"><img src="../photo/CGMLAB教師節活動(戰醬燒肉)20211007/S__22274138.jpg" width="219" height="164" border="0" /></a></div>
+                    </td>
+                  </tr>
+                  <tr align="center">
+                    <td width="237">
+                      <div class="picCaptionStyle"><a href="../photo/CGMLab迎新送舊(涮乃葉)/index.html" target="_blank">CGMLab迎新送舊(涮乃葉)</a></div>
+                    </td>
+                    <td >
+                      <div class="picCaptionStyle"><a href="../photo/CGW2022(外貿協會台北國際會議中心 (TICC))/index.html" target="_blank">CGW2022(外貿協會台北國際會議中心 (TICC))</a></div>
+                    </td>
+                    <td >
+                      <div class="picCaptionStyle"><a href="../photo/CGMLab尾牙(鼎豐鴛鴦麻辣火鍋)20220120/index.html" target="_blank">CGMLab尾牙(鼎豐鴛鴦麻辣火鍋)20220120 </a></div>
+                    </td>
+                    <td>
+                      <div class="picCaptionStyle"><a href="../photo/CGMLAB教師節活動(戰醬燒肉)20211007/index.html" target="_blank">CGMLAB教師節活動(戰醬燒肉)20211007</a></div>
+                    </td>
+                  </tr>
+                  <tr align="center">
+                  <td width="237">
+                    <div class="picStyle"><a href="../photo/CGMLAB迎新送舊(欣葉)20210812/index.html" target="_blank"><img src="../photo/CGMLAB迎新送舊(欣葉)20210812/images/s__121937938_001.jpg" width="219" height="164" border="0" /></a></div>
+                  </td>
+                  <td width="237">
+                    <div class="picStyle"><a href="../photo/CGMLAN中秋節烤肉與教師節活動20200928/index.html" target="_blank"><img src="../photo/CGMLAN中秋節烤肉與教師節活動20200928/images/photo_2020_10_05_16_54_19.jpg" width="219" height="164" border="0" /></a></div>
+                  </td>
+                  <td width="237">
+                    <div class="picStyle"><a href="../photo/CGMLab送舊迎新(欣葉日式料理)20200723/index.html" target="_blank"><img src="../photo/CGMLab送舊迎新(欣葉日式料理)20200723/images/img_10.jpg" width="219" height="164" border="0" /></a></div>
+                  </td>
+                  <td width="237">
+                    <div class="picStyle"><a href="../photo/CGMLab尾牙(欣葉日式料理)20200109/index.html" target="_blank"><img src="../photo/CGMLab尾牙(欣葉日式料理)20200109/images/img_11.jpg" width="219" height="164" border="0" /></a></div>
+                  </td>
+                  </tr>
+                  <tr align="center">
+                    <td >
+                      <div class="picCaptionStyle"><a href="" target="_blank"> CGMLAB迎新送舊(欣葉)20210812</a></div>
+                    </td>
+                    <td >
+                      <div class="picCaptionStyle"><a href="" target="_blank"> CGMLAB中秋節烤肉與教師節活動20200928</a></div>
+                    </td>
+                    <td >
+                      <div class="picCaptionStyle"><a href="" target="_blank"> CGMLab送舊迎新(欣葉日式料理)20200723</a></div>
+                    </td>
+                    <td>
+                      <div class="picCaptionStyle"><a href="../photo/CGMLab尾牙(欣葉日式料理)20200109/index.html" target="_blank">CGMLab尾牙(欣葉日式料理)20200109</a></div>
+                    </td>
+                  </tr>
+                  <tr align="center" >
+                    <td width="237">
+                      <div class="picStyle"><a href="../photo/CGMLAB中秋烤肉與教師節活動(狠生氣)20190912/index.html" target="_blank"><img src="../photo/CGMLAB中秋烤肉與教師節活動(狠生氣)20190912/images/1.jpg" width="219" height="164" border="0" /></a></div>
+                    </td>
+                    <td width="237">
+                      <div class="picStyle"><a href="../photo/CGMLAB迎新送舊(凱達大飯店)(20190702)/index.html" target="_blank"><img src="../photo/CGMLAB迎新送舊(凱達大飯店)(20190702)/images/10.jpg" width="219" height="164" border="0" /></a></div>
+                    </td>
+                    <td width="237">
+                      <div class="picStyle"><a href="../photo/CGW2019(元智大學)/index.html" target="_blank"><img src="../photo/CGW2019(元智大學)/images/1.jpg" width="219" height="164" border="0" /></a></div>
+                    </td>
+                    <td width="237">
+                      <div class="picStyle"><a href="../photo/CGMLab尾牙(欣葉日式料理)(20190110)/index.html" target="_blank"><img src="../photo/CGMLab尾牙(欣葉日式料理)(20190110)/images/img_0678.jpg" width="219" height="164" border="0" /></a></div>
+                    </td>
+                  <tr align="center">
+                    <td >
+                      <div class="picCaptionStyle"><a href="../photo/CGMLAB中秋烤肉與教師節活動(狠生氣)20190912/index.html" target="_blank">CGMLAB中秋烤肉與教師節活動(狠生氣)20190912</a></div>
+                    </td>
+                    <td>
+                      <div class="picCaptionStyle"><a href="../photo/CGMLAB迎新送舊(凱達大飯店)(20190702)/index.html" target="_blank"> CGMLAB迎新送舊(凱達大飯店)20190702</a></div>
+                    </td>
+                    <td >
+                      <div class="picCaptionStyle"><a href="../photo/CGW2019(元智大學)/index.html" target="_blank">CGW2019(元智大學)</a></div>
+                    </td>
+                    <td>
+                      <div class="picCaptionStyle"><a href="../photo/CGMLab尾牙(欣葉日式料理)(20190110)/index.html" target="_blank">CGMLab尾牙(欣葉日式料理)20190110</a></div>
+                    </td>
+                  </tr>
+                  <tr align="center" >
+                    <td width="237">
+                      <div class="picStyle"><a href="../photo/CGM慶祝教授生日/index.html" target="_blank"><img src="../photo/CGM慶祝教授生日/images/img_9309.jpg" width="219" height="164" border="0" /></a></div>
+                    </td>
+                    <td width="237">
+                      <div class="picStyle"><a href="../photo/CGMLAB中秋節與教師節活動(戰醬燒肉)/index.html" target="_blank"><img src="../photo/CGMLAB中秋節與教師節活動(戰醬燒肉)/images/img_7552.jpg" width="219" height="164" border="0" /></a></div>
+                    </td>
+                    <td width="237">
+                      <div class="picStyle"><a href="../photo/CGMLAB迎新送舊(藝奇)20180712/index.html" target="_blank"><img src="../photo/CGMLAB迎新送舊(藝奇)20180712/images/img_5807.jpg" width="219" height="164" border="0" /></a></div>
+                    </td>
+                    <td width="237">
+                      <div class="picStyle"><a href="../photo/CGW2018_20180629-30_國立台南藝術大學/index.html" target="_blank"><img src="../photo/CGW2018_20180629-30_國立台南藝術大學/images/img_5183.jpg" width="219" height="164" border="0" /></a></div>
+                    </td>
+                  <tr align="center">
+                    <td>
+                      <div class="picCaptionStyle"><a href="../photo/CGM慶祝教授生日/index.html" target="_blank">CGMLAB 慶祝楊傳凱教授生日20181115</a></div>
+                    </td>
+                    <td >
+                      <div class="picCaptionStyle"><a href="../photo/CGMLAB中秋節與教師節活動(戰醬燒肉)/index.html" target="_blank">CGMLAB中秋節與教師節活動(戰醬燒肉)20180927</a></div>
+                    </td>
+                    <td >
+                      <div class="picCaptionStyle"><a href="../photo/CGMLAB迎新送舊(藝奇)20180712/index.html" target="_blank">CGMLAB迎新送舊(藝奇)20180712</a></div>
+                    </td>
+                    <td >
+                      <div class="picCaptionStyle"><a href="../photo/CGW2018_20180629-30_國立台南藝術大學/index.html" target="_blank">CGW2018(台南藝術大學)</a></div>
+                    </td>
+                  </tr>
+                  <tr align="center" >
+                    <td width="237">
+                      <div class="picStyle"><a href="../photo/20180111CGMLab響食天堂/index.html" target="_blank"><img src="../photo/20180111CGMLab響食天堂/images/img_0820.jpg" width="219" height="164" border="0" /></a></div>
+                    </td>
+                    <td width="237">
+                      <div class="picStyle"><a href="../photo/2017CGM中秋烤肉/index.html" target="_blank"><img src="../photo/2017CGM中秋烤肉/images/img_4269.jpg" width="219" height="164" border="0" /></a></div>
+                    </td>
+                    <td width="237">
+                      <div class="picStyle"><a href="../photo/20170928CGM教師節活動/index.html" target="_blank"><img src="../photo/20170928CGM教師節活動/images/img_3902.jpg" width="219" height="164" border="0" /></a></div>
+                    </td>
+                    <td width="237">
+                      <div class="picStyle"><a href="../photo/2017欣葉迎新送舊/index.html" target="_blank"><img src="../photo/2017欣葉迎新送舊/images/img_3588.jpg" width="219" height="164" border="0" /></a></div>
+                    </td>
+                  <tr align="center">
+                    <td >
+                      <div class="picCaptionStyle"><a href="../photo/20180111CGMLab響食天堂/index.html" target="_blank"></a>CGM響食天堂尾牙20180111</div>
+                    </td>
+                    <td >
+                      <div class="picCaptionStyle"><a href="../photo/2017CGM中秋烤肉/index.html" target="_blank"></a>CGM中秋烤肉20171004</div>
+                    </td>
+                    <td >
+                      <div class="picCaptionStyle"><a href="../photo/20170928CGM教師節活動/index.html" target="_blank">CGMLAB教師節活動20170928</a></div>
+                    </td>
+                    <td >
+                      <div class="picCaptionStyle"><a href="../photo/2017欣葉迎新送舊/index.html" target="_blank">CGMLAB迎新送舊(欣葉)20170810</a></div>
+                    </td>
+                    <td >
+                  </tr>
+                  <tr align="center" >
+                    <td width="237">
+                      <div class="picStyle"><a href="../photo/2017CGW/index.html" target="_blank"><img src="../photo/2017CGW/images/img___52_.jpg" width="219" height="164" border="0" /></a></div>
+                    </td>
+                    <td width="237">
+                      <div class="picStyle"><a href="../photo/CGMLab尾牙(美麗信酒店)20170112/index.html" target="_blank"><img src="../photo/CGMLab尾牙(美麗信酒店)20170112/images/small_img_7647.jpg" width="219" height="164" border="0" /></a></div>
+                    </td>
+                    <td width="237">
+                      <div class="picStyle"><a href="../photo/CGM實驗室教師節活動(20160929)/index.html" target="_blank"><img src="../photo/CGM實驗室教師節活動(20160929)/images/small_img_7021.jpg" width="219" height="164" border="0" /></a></div>
+                    </td>
+                    <td width="237">
+                      <div class="picStyle"><a href="../photo/CGM饗食天堂迎新送舊(20160818)/index.html" target="_blank"><img src="../photo/CGM饗食天堂迎新送舊(20160818)/images/small_img_6847.jpg" width="219" height="164" border="0" /></a></div>
+                    </td>
+                  <tr align="center">
+                    <td >
+                      <div class="picCaptionStyle"><a href="../photo/2017CGW/index.html" target="_blank">CGW2017(靜宜大學)20170629</a></div>
+                    </td>
+                    <td >
+                      <div class="picCaptionStyle"><a href="../photo/CGMLab尾牙(美麗信酒店)20170112/index.html" target="_blank">CGMLab尾牙(美麗信酒店)20170112</a></div>
+                    </td>
+                    <td >
+                      <div class="picCaptionStyle"><a href="../photo/CGM實驗室教師節活動(20160929)/index.html" target="_blank">CGM實驗室教師節活動(20160929)</a></div>
+                    </td>
+                    <td >
+                      <div class="picCaptionStyle"><a href="../photo/CGM饗食天堂迎新送舊(20160818)/index.html" target="_blank"> CGM饗食天堂迎新送舊(20160818)</a></div>
+                    </td>
+                  </tr>
+                  <tr align="center" >
+                    <td width="237">
+                      <div class="picStyle"><a href="../photo/CGM實驗室CGW研討會(20160711-12)/index.html" target="_blank"><img src="../photo/CGM實驗室CGW研討會(20160711-12)/small_img_6634.jpg" width="219" height="164" border="0" /></a></div>
+                    </td>
+                    <td width="237">
+                      <div class="picStyle"><a href="../photo/IEEE Pacificvis2016與慶功宴IN欣葉/index.html" target="_blank">
+                        <a href="../photo/IEEE Pacificvis2016與慶功宴IN欣葉/index.html">
+                        <img src="../photo/IEEE Pacificvis2016與慶功宴IN欣葉/small_img_8858.jpg" width="219" height="164" border="0" />
+                        </a>
+                      </div>
+                    </td>
+                    <td width="237">
+                      <div class="picStyle"> <a href="../photo/CGMLab尾牙(欣葉日式料理)20160122/index.html" target="_blank"><img src="../photo/CGMLab尾牙(欣葉日式料理)20160122/small_img_4344.jpg" width="219" height="164" border="0"></a></div>
+                    </td>
+                    <td width="237">
+                      <div class="picStyle"> <a href="../photo/2015CGMLab冬至煮湯圓/index.html" target="_blank"><img src="../photo/2015CGMLab冬至煮湯圓/small_img_4159.jpg" width="219" height="164" border="0"></a></div>
+                    </td>
+                  <tr align="center">
+                    <td >
+                      <div class="picCaptionStyle"><a href="../photo/CGM實驗室CGW研討會(20160711-12)/index.html" target="_blank"> CGM實驗室CGW研討會(20160711-12)</a></div>
+                    </td>
+                    <td >
+                      <div class="picCaptionStyle"><a href="../photo/IEEE Pacificvis2016與慶功宴IN欣葉/index.html" target="_blank"> Pacificvis2016與慶功宴IN欣葉(20160523)</a></div>
+                    </td>
+                    <td >
+                      <div class="picCaptionStyle"><a href="../photo/CGMLab尾牙(欣葉日式料理)20160122/index.html" target="_blank"> CGMLab尾牙(欣葉日式料理)(20160122)</a></div>
+                    </td>
+                    <td >
+                      <div class="picCaptionStyle"><a href="../photo/2015CGMLab冬至煮湯圓/index.html" target="_blank"> CGMLab冬至煮湯圓(20151222)</a></div>
+                    </td>
+                  </tr>
+                  <tr align="center" >
+                    <td width="237">
+                      <div class="picStyle"> <a href="../photo/2015 NTUST CGM - Teacher's Day/index.html" target="_blank"><img src="../photo/2015 NTUST CGM - Teacher's Day/small_img_3880.jpg" width="219" height="164" border="0"></a></div>
+                    </td>
+                    <td width="237">
+                      <div class="picStyle"> <a href="../photo/CGM饗食天堂迎新送舊(20150826)/index.html" target="_blank"><img src="../photo/CGM饗食天堂迎新送舊(20150826)/small_IMG_3625.JPG" width="219" height="164" border="0"></a></div>
+                    </td>
+                    <td width="237">
+                      <div class="picStyle"> <a href="../photo/CGM實驗室CGW研討會(20150709)/index.html" target="_blank"><img src="../photo/CGM實驗室CGW研討會(20150709)/small_IMG_3185.JPG" width="219" height="164" border="0"></a></div>
+                    </td>
+                    <td width="237">
+                      <div class="picStyle"> <a href="../photo/20150120_CGMLab尾牙(泰市場)/index.html" target="_blank"><img src="../photo/20150120_CGMLab尾牙(泰市場)/small_img_2255.jpg" width="219" height="164" border="0"></a></div>
+                    </td>
+                  <tr align="center">
+                    <td >
+                      <div class="picCaptionStyle"><a href="../photo/2015 NTUST CGM - Teacher's Day/index.html" target="_blank"> CGM實驗室教師節活動(20150924)</a></div>
+                    </td>
+                    <td >
+                      <div class="picCaptionStyle"><a href="../photo/CGM饗食天堂迎新送舊(20150826)/index.html" target="_blank">CGM饗食天堂迎新送舊(20150826)</a></div>
+                    </td>
+                    <td >
+                      <div class="picCaptionStyle"> <a href="../photo/CGM實驗室CGW研討會(20150709)/index.html" target="_blank">2015CGW研討會(20150709)</a></div>
+                    </td>
+                    <td >
+                      <div class="picCaptionStyle"><a href="../photo/20140710_CGM實驗室CGW研討會/index.html" target="_blank">CGMLab尾牙(泰市場)(2015/01/20)</a></div>
+                    </td>
+                  </tr>
+                  <tr align="center">
+                    <td width="237">
+                      <div class="picStyle"> <a href="../photo/20141009_教師節活動/index.html" target="_blank"><img src="../photo/20141009_教師節活動/small_img_0878.jpg" width="219" height="164" border="0"></a></div>
+                    </td>
+                    <td width="237">
+                      <div class="picStyle"> <a href="../photo/20140821_8月慶升與中秋烤肉/index.html" target="_blank"><img src="../photo/20140821_8月慶升與中秋烤肉/Small_10721306_512617628882625_673543827_n.jpg" width="219" height="164" border="0"></a></div>
+                    </td>
+                    <td width="237">
+                      <div class="picStyle"> <a href="../photo/20140717_CGM實驗室期末歡唱/index.html" target="_blank"><img src="../photo/20140717_CGM實驗室期末歡唱/small_img_4332.jpg" width="219" height="164" border="0"></a></div>
+                    </td>
+                    <td width="237">
+                      <div class="picStyle"> <a href="../photo/20140710_CGM實驗室CGW研討會/index.html" target="_blank"><img src="../photo/20140710_CGM實驗室CGW研討會/small_img_4315.jpg" width="219" height="164" border="0"></a></div>
+                    </td>
+                  </tr>
+                  <tr align="center">
+                    <td >
+                      <div class="picCaptionStyle"><a href="../photo/20140717_CGM實驗室期末歡唱/index.html" target="_blank">CGM實驗室教師節活動(2014/10/09)</a></div>
+                    </td>
+                    <td >
+                      <div class="picCaptionStyle"><a href="../photo/20140717_CGM實驗室期末歡唱/index.html" target="_blank">CGM實驗室8月慶生&中秋烤肉(2014/08/21)</a></div>
+                    </td>
+                    <td >
+                      <div class="picCaptionStyle"><a href="../photo/20140717_CGM實驗室期末歡唱/index.html" target="_blank">CGM實驗室期末歡唱(2014/07/17)</a></div>
+                    </td>
+                    <td >
+                      <div class="picCaptionStyle"><a href="../photo/20140710_CGM實驗室CGW研討會/index.html" target="_blank">CGM實驗室CGW研討會(2014/07/10-11)</a></div>
+                    </td>
+                  </tr>
+                  <tr align="center" >
+                    <td width="238">
+                      <div class="picStyle"> <a href="../photo/20140612_CGM實驗室6月慶生會/index.html" target="_blank"><img src="../photo/20140612_CGM實驗室6月慶生會/smallimg_3834.jpg" width="219" height="164" border="0"></a></div>
+                    </td>
+                    <td width="238">
+                      <div class="picStyle"> <a href="../photo/20140410_CGM實驗室4月慶生會/index.html" target="_blank"><img src="../photo/20140410_CGM實驗室4月慶生會/smallimg_3416.jpg" width="219" height="164" border="0"></a></div>
+                    </td>
+                    <td width="237" >
+                      <div class="picStyle"> <a href="../photo/20140310-0320CGM實驗室3月慶生會/index.html" target="_blank"><img src="../photo/20140310-0320CGM實驗室3月慶生會/smallimg_3834.jpg" width="219" height="164" border="0"></a></div>
+                    </td>
+                    <td width="237">
+                      <div class="picStyle"> <a href="../photo/20140113_CGMLab尾牙(野宴極燒肉)/index.html" target="_blank"><img src="../photo/20140113_CGMLab尾牙(野宴極燒肉)/small_img_3229.jpg" width="219" height="164" border="0"></a></div>
+                    </td>
+                  <tr align="center" >
+                  <tr align="center">
+                    <td >
+                      <div class="picCaptionStyle"><a href="../photo/20140612_CGM實驗室6月慶生會/index.html" target="_blank">CGM實驗室6月慶生會(2014/06/12)</a></div>
+                    </td>
+                    <td  >
+                      <div class="picCaptionStyle"><a href="../photo/20140410_CGM實驗室4月慶生會/index.html" target="_blank">CGM實驗室4月慶生會(2014/04/10)</a></div>
+                    </td>
+                    <td >
+                      <div class="picCaptionStyle"><a href="../photo/20140310-0320CGM實驗室3月慶生會/index.html" target="_blank">CGM實驗室3月慶生會(2014/03/10-20)</a></div>
+                    </td>
+                    <td >
+                      <div class="picCaptionStyle"><a href="../photo/20140113_CGMLab尾牙(野宴極燒肉)/index.html" target="_blank">CGM尾牙(野宴極燒肉)(2014/01/13)</a></div>
+                    </td>
+                  </tr>
+                  <td width="238" align="center">
+                    <div class="picStyle"> <a href="../photo/20131114-1128CGM實驗室11月慶生會/index.html" target="_blank"><img src="../photo/20131114-1128CGM實驗室11月慶生會/smallimg_2832.jpg" width="219" height="164" border="0"></a></div>
+                  </td>
+                  <td width="238" align="center">
+                    <div class="picStyle"> <a href="../photo/20130915-23歡樂教師節-手工肥皂/index.html" target="_blank"><img src="../photo/20130915-23歡樂教師節-手工肥皂/smallimg_1188.jpg" width="219" height="164" border="0"></a></div>
+                  </td>
+                  <td width="237" align="center" >
+                    <div class="picStyle"> <a href="../photo/20130902中秋節CGMLab烤肉趣/index.html" target="_blank"><img src="../photo/20130902中秋節CGMLab烤肉趣/smallimg_2094.jpg" width="219" height="164" border="0"></a></div>
+                  </td>
+                  <td width="237" align="center">
+                    <div class="picStyle"> <a href="../photo/20130722CGM原燒迎新送舊/index.html" target="_blank"><img src="../photo/20130722CGM原燒迎新送舊/smallIMG.jpg" width="219" height="164" border="0"></a></div>
+                  </td>
+                  <tr align="center">
+                    <td >
+                      <div class="picCaptionStyle"><a href="../photo/20131114-1128CGM實驗室11月慶生會/index.html" target="_blank">CGM實驗室11月慶生會(2013/11/14-28)</a></div>
+                    </td>
+                    <td  >
+                      <div class="picCaptionStyle"><a href="../photo/20130915-23歡樂教師節-手工肥皂/index.html" target="_blank">歡樂教師節-手工肥皂(2013/09/15-23)</a></div>
+                    </td>
+                    <td >
+                      <div class="picCaptionStyle"><a href="../photo/20130902中秋節CGMLab烤肉趣/index.html" target="_blank">中秋節CGMLab烤肉趣(2013/09/02)</a></div>
+                    </td>
+                    <td >
+                      <div class="picCaptionStyle"><a href="../photo/20130722CGM原燒迎新送舊/index.html" target="_blank">CGM原燒迎新送舊+慶生(2013/07/22)</a></div>
+                    </td>
+                  </tr>
+                  <tr align="center" >
+                    <td width="238">
+                      <div class="picStyle"> <a href="../photo/2013CGM研討會/index.html" target="_blank"><img border="0" src="../photo/2013CGM研討會/smallimg.jpg" width="219" height="164"></a> </div>
+                    </td>
+                    <td width="238">
+                      <div class="picStyle"> <a href="../photo/20130703恭賀楊傳凱老師榮升教授與七月壽星生日PA/index.html" target="_blank"><img border="0" src="../photo/20130703恭賀楊傳凱老師榮升教授與七月壽星生日PA/img_1738small.jpg" width="219" height="164"></a> </div>
+                    </td>
+                    <td width="237" >
+                      <div class="picStyle"> <a href="../photo/20130125_CGMLab尾牙(日不落食堂)/index.html" target="_blank"><img border="0" src="../photo/20130125_CGMLab尾牙(日不落食堂)/IMG_1147-001small.JPG" width="219" height="164"></a> </div>
+                    </td>
+                    <td width="237">
+                      <div class="picStyle"><a href="../photo/20121116迎新第二攤(野宴極燒肉)/index.html" target="_blank">
+                        <img border="0" src="../photo/20121116迎新第二攤(野宴極燒肉)/smalldscn6152.jpg" width="219" height="164">
+                        </a>
+                      </div>
+                    </td>
+                  <tr align="center">
+                    <td >
+                      <div class="picCaptionStyle"><a href="../photo/2013CGM研討會/index.html" target="_blank">2013CGW研討會(2013/07/10-12)</a></div>
+                    </td>
+                    <td  >
+                      <div class="picCaptionStyle"><a href="../photo/20130703恭賀楊傳凱老師榮升教授與七月壽星生日PA/index.html" target="_blank">恭賀老師榮升教授與七月生日(2013/07/03)</a></div>
+                    </td>
+                    <td >
+                      <div class="picCaptionStyle"><a href="../photo/20130125_CGMLab尾牙(日不落食堂)/index.html" target="_blank">CGM尾牙(日不落食堂)(2013/01/25)</a></div>
+                    </td>
+                    <td >
+                      <div class="picCaptionStyle"><a href="../photo/20121116迎新第二攤(野宴極燒肉)/index.html" target="_blank">迎新第二攤(野宴極燒肉)(2012/11/16)</a></div>
+                    </td>
+                  </tr>
+                  <tr align="center" >
+                    <td width="238">
+                      <div class="picStyle"><a href="../photo/20070914-28歡樂教師節(鶯歌手拉坯)/index.html" target="_blank">
+                        <img border="0" src="../photo/20070914-28歡樂教師節(鶯歌手拉坯)/smallzimg_0195.jpg" width="219" height="164">
+                        </a>
+                      </div>
+                    </td>
+                    <td width="238">
+                      <div class="picStyle"><a href="../photo/2012IEEESummerSchool/index.html" target="_blank">
+                        <img border="0" src="../photo/2012IEEESummerSchool/smallIMG_0161.JPG" width="219" height="164">
+                        </a>
+                      </div>
+                    </td>
+                    <td width="237" >
+                      <div class="picStyle"><a href="../photo/20120719CGM迎新/index.html" target="_blank">
+                        <img border="0" src="../photo/20120719CGM迎新/smallIMG_0123.JPG" width="219" height="164">
+                        </a>
+                      </div>
+                    </td>
+                    <td width="237">
+                      <div class="picStyle"><a href="../photo/2012CGM研討會/index.html" target="_blank">
+                        <img border="0" src="../photo/2012CGM研討會/smallDSCN4305.JPG" width="219" height="164">
+                        </a>
+                      </div>
+                    </td>
+                  <tr align="center">
+                    <td >
+                      <div class="picCaptionStyle"><a href="../photo/20070914-28歡樂教師節(鶯歌手拉坯)/index.html" target="_blank">歡樂教師節-鶯歌手拉坯(2012/09/14-28)</a></div>
+                    </td>
+                    <td  >
+                      <div class="picCaptionStyle"><a href="../photo/20090305CGM迎新/index.html" target="_blank"></a><a href="../photo/2012IEEESummerSchool/index.html" target="_blank">2012IEEESummerSchool(2012/08/13-16)</a></div>
+                    </td>
+                    <td >
+                      <div class="picCaptionStyle"><a href="../photo/20120719CGM迎新/index.html" target="_blank">CGM迎新(2012/07/19)</a></div>
+                    </td>
+                    <td >
+                      <div class="picCaptionStyle"><a href="../photo/2012CGM研討會/index.html" target="_blank">2012CGW研討會(2012/07/11-13)</a></div>
+                    </td>
+                  </tr>
+                  <tr align="center" >
+                    <td width="238">
+                      <div class="picStyle"><a href="../photo/20090721京采聚餐/index.html" target="_blank">
+                        <img border="0" src="../photo/20090721京采聚餐/img_0298small.jpg" width="219" height="164">
+                        </a>
+                      </div>
+                    </td>
+                    <td width="237" >
+                      <div class="picStyle"><a href="../photo/20090305CGM迎新/index.html" target="_blank">
+                        <img border="0" src="../photo/20090305CGM迎新/DSCF3669.JPG" width="219" height="164">
+                        </a>
+                      </div>
+                    </td>
+                    <td width="237">
+                      <div class="picStyle"><a href="../photo/20090122CGM尾牙/index.html" target="_blank">
+                        <img border="0" src="../photo/20090122CGM尾牙/dscf0553.jpg" width="219" height="164">
+                        </a>
+                      </div>
+                    </td>
+                    <td width="238">
+                      <div class="picStyle"><a href="../photo/2008CGW/index.html" target="_blank">
+                        <img border="0" src="../photo/2008CGW/DSCF1807.JPG" width="219" height="164">
+                        </a>
+                      </div>
+                    </td>
+                  <tr align="center">
+                    <td >
+                      <div class="picCaptionStyle"><a href="../photo/20090721京采聚餐/index.htmll" target="_blank">京采聚餐(2009/07/21)</a></div>
+                    </td>
+                    <td  >
+                      <div class="picCaptionStyle"><a href="../photo/20090305CGM迎新/index.html" target="_blank">CGM迎新(2009/03/05)</a></div>
+                    </td>
+                    <td >
+                      <div class="picCaptionStyle"><a href="../photo/20090122CGM尾牙/index.html" target="_blank">CGW尾牙(2009/01/22)</a></div>
+                    </td>
+                    <td >
+                      <div class="picCaptionStyle"><a href="../photo/2008CGW/index.html" target="_blank">2008CGW研討會(2008/07/23)</a></div>
+                    </td>
+                  </tr>
+                  <tr align="center" >
+                    <td width="238">
+                      <div class="picStyle"><a href="../photo/20080702_CGM%20lab/index.html" target="_blank">
+                        <img border="0" src="../photo/20080702_CGM%20lab/DSCF6281s.JPG" width="219" height="164">
+                        </a>
+                      </div>
+                    </td>
+                    <td width="237" >
+                      <div class="picStyle"><a href="../active_014_20080130.html" target="_blank">
+                        <img border="0" src="../photo/20080130/DSCF4079.JPG" width="219" height="164">
+                        </a>
+                      </div>
+                    </td>
+                    <td width="237">
+                      <div class="picStyle"><a href="../active_013_20071201.html" target="_blank">
+                        <img border="0" src="../photo/20071201_CGMlab/DSCF3415.JPG" width="219" height="164">
+                        </a>
+                      </div>
+                    </td>
+                    <td width="238">
+                      <div class="picStyle"><a href="../active_012_20070928.html" target="_blank">
+                        <img border="0" src="../photo/20070928_teacher/DSCF2685.JPG" width="219" height="164">
+                        </a>
+                      </div>
+                    </td>
+                  <tr align="center">
+                    <td >
+                      <div class="picCaptionStyle"><a href="../photo/20080702_CGM%20lab/index.html" target="_blank">CGM佳焰屋迎新送舊(2008/07/02)</a></div>
+                    </td>
+                    <td  >
+                      <div class="picCaptionStyle"><a href="../active_014_20080130.html" target="_blank">CGM天外天迎新(2008/01/30)</a></div>
+                    </td>
+                    <td >
+                      <div class="picCaptionStyle"><a href="../active_013_20071201.html" target="_blank">CGM大團聚(2007/12/01)</a></div>
+                    </td>
+                    <td >
+                      <div class="picCaptionStyle"><a href="../active_012_20070928.html" target="_blank">歡樂教師節(2007/09/28)</a></div>
+                    </td>
+                  </tr>
+                  <tr align="center" >
+                    <td width="238">
+                      <div class="picStyle"><a href="../active_011_20070921Final.html" target="_blank">
+                        <img border="0" src="../photo/20070921_CGMlab/DSCF2592.JPG" width="219" height="164">
+                        </a>
+                      </div>
+                    </td>
+                    <td width="237" >
+                      <div class="picStyle"><a href="../active_011_20070921.html" target="_blank">
+                        <img border="0" src="../photo/20070921_CGMlab/DSCF2538.JPG" width="219" height="164">
+                        </a>
+                      </div>
+                    </td>
+                    <td width="237">
+                      <div class="picStyle"><a href="../active_010_20070705.html" target="_blank">
+                        <img border="0" src="../photo/20070705_lab/S4300115s.jpg" width="219" height="164">
+                        </a>
+                      </div>
+                    </td>
+                    <td width="238">
+                      <div class="picStyle"><a href="../active_009_NY2006.htm" target="_blank">
+                        <img border="0" src="../photo/NY2006/DSCN8666_resize.JPG" width="219" height="164">
+                        </a>
+                      </div>
+                    </td>
+                  <tr align="center">
+                    <td >
+                      <div class="picCaptionStyle"><a href="../active_011_20070921Final.html" target="_blank">CGM lab中秋夜烤(2007/09/21)下</a></div>
+                    </td>
+                    <td  >
+                      <div class="picCaptionStyle"><a href="../active_011_20070921.html" target="_blank">CGM lab中秋夜烤(2007/09/21)上</a></div>
+                    </td>
+                    <td >
+                      <div class="picCaptionStyle"><a href="../active_010_20070705.html" target="_blank">上闔屋 迎新送舊(2007/07/05)</a></div>
+                    </td>
+                    <td >
+                      <div class="picCaptionStyle"><a href="../active_009_NY2006.htm" target="_blank">亞太會館 歲末尾牙(2006/01/17)</a></div>
+                    </td>
+                  </tr>
+                  <tr align="center" >
+                    <td width="238">
+                      <div class="picStyle"><a href="../active_008.htm" target="_blank">
+                        <img border="0" src="../photo/Far_East/s1.jpg" width="219" height="164">
+                        </a>
+                      </div>
+                    </td>
+                    <td width="237" >
+                      <div class="picStyle"><a href="../active_007.htm" target="_blank">
+                        <img border="0" src="../photo/chiou_birthday/s1.jpg" width="219" height="164">
+                        </a>
+                      </div>
+                    </td>
+                    <td width="237">
+                      <div class="picStyle"><a href="../active_006.htm" target="_blank"><img border="0" src="../photo/CingJing_Farm/s9.jpg" width="219" height="164" /></a></div>
+                    </td>
+                    <td width="238">
+                      <div class="picStyle"><a href="../active_005.htm" target="_blank">
+                        <img border="0" src="../photo/poster/KIF_1111.JPG" width="219" height="164">
+                        </a>
+                      </div>
+                    </td>
+                  <tr align="center">
+                    <td >
+                      <div class="picCaptionStyle"><a href="../active_008.htm" target="_blank">壹Cafe聚餐 迎新送舊(2005/07/21)</a></div>
+                    </td>
+                    <td  >
+                      <div class="picCaptionStyle"><a href="../active_007.htm" target="_blank">家瑋生日歡唱 (2005/06/05)</a></div>
+                    </td>
+                    <td >
+                      <div class="picCaptionStyle"><a href="../active_006.htm" target="_blank">清境農場(2005/01/30-31)</a></div>
+                    </td>
+                    <td >
+                      <div class="picCaptionStyle"><a href="../active_005.htm" target="_blank">演講海報製作 (2004/10/07)</a></div>
+                    </td>
+                  </tr>
+                  <tr align="center" >
+                    <td width="238">
+                      <div class="picStyle"><a href="../active_004.htm" target="_blank">
+                        <img border="0" src="../photo/Moon_Festival/sDSC01652.jpg" width="219" height="164">
+                        </a>
+                      </div>
+                    </td>
+                    <td width="237" >
+                      <div class="picStyle"><a href="../active_003.htm" target="_blank">
+                        <img border="0" src="../photo/gift_sundoll/sKIF_1080.jpg" width="219" height="164">
+                        </a>
+                      </div>
+                    </td>
+                    <td width="237">
+                      <div class="picStyle"><a href="../active_002.htm" target="_blank"><img border="0" src="../photo/splendor/sgroup1.jpg" width="219" height="164" /></a></div>
+                    </td>
+                    <td width="238">
+                      <div class="picStyle"><a href="../active_001.htm" target="_blank">
+                        <img border="0" src="../photo/tasty/group_s.jpg" width="219" height="164">
+                        </a>
+                      </div>
+                    </td>
+                  <tr align="center">
+                    <td >
+                      <div class="picCaptionStyle"><a href="../active_004.htm" target="_blank">中秋節烤肉 (2004/09/28)</a></div>
+                    </td>
+                    <td  >
+                      <div class="picCaptionStyle"><a href="../active_003.htm" target="_blank">教師節的禮物(2004/09/27)</a></div>
+                    </td>
+                    <td >
+                      <div class="picCaptionStyle"><a href="../active_002.htm" target="_blank">京采聚餐-迎新送舊(2004/07/08)</a></div>
+                    </td>
+                    <td >
+                      <div class="picCaptionStyle"><a href="../active_001.htm" target="_blank">Tasty聚餐(2004/01/30)</a></div>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+        <td width="11" style="background-image:url(Image/BackGroundRight2.png)">&nbsp;</td>
+        <td width="50">&nbsp;</td>
+      </tr>
+      <tr>
+        <td Height="30px" rowspan="2">&nbsp;</td>
+        <td colspan="2" rowspan="2"><img src="Image/BackGroundLeftDown.png" width="30" height="30" /></td>
+        <td height="19" bgcolor="#FFFFFF">&nbsp;</td>
+        <td colspan="2" rowspan="2" ><img src="Image/BackGroundRightDown.png" width="30" height="30" /></td>
+        <td rowspan="2"></td>
+      </tr>
+      <tr>
+        <td height="11" style="background-image:url(Image/BackGroundDown2.png)"></td>
+      </tr>
+      <tr>
+        <td width="50">&nbsp;</td>
+        <td width="11">&nbsp;</td>
+        <td width="19">&nbsp;</td>
+        <td width="950"><font face="Arial, Helvetica, sans-serif" size="-2">National Taiwan University of Science and Technology<br />
+          Computer Graphics and Multimedia Laboratory<br />
+          © 2019 CGM lab. </font>
+        </td>
+        <td width="19">&nbsp;</td>
+        <td width="11">&nbsp;</td>
+        <td width="50">&nbsp;</td>
+      </tr>
+    </table>
+  </body>
+</html>
+
