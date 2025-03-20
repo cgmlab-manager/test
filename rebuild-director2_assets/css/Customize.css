@@ -1,0 +1,41 @@
+/* @media (max-width: 768px) {
+    .col img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+} */
+
+.ckyang-image-block img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3 {
+    text-align: center;
+}
+
+@media (max-width: 755px) {
+    .ckyang-image-block img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 982px) {
+    .col img {
+        /* width: 80%; */
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .ckyang-image-block {
+        margin-bottom: 20px;
+    }
+}
