@@ -1,0 +1,192 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<style type="text/css">
+		<!-- .MiddleInTopBottom {
+			background-position: center center;
+			vertical-align: middle;
+		}
+		
+		.Small_Title {
+			vertical-align: baseline;
+		}
+		
+		.Paper_Table {
+			border: 1px dashed #999999;
+			margin: 0px;
+			padding: 0px;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 10px;
+			color: #333333;
+		}
+		
+		.Paper_Table_LeftTitle {
+			margin-top: 1px;
+			margin-right: 0px;
+			margin-bottom: 1px;
+			margin-left: 5px;
+			color: #FFFFFF;
+		}
+		
+		.Paper_Table_RightTitle {
+			color: #FFFFFF;
+		}
+		
+		.Paper_Table_Content {
+			margin-top: 1px;
+			margin-right: 0px;
+			margin-bottom: 1px;
+			margin-left: 5px;
+		}
+		
+		a:link {
+			color: #333333;
+		}
+		
+		a:visited {
+			color: #333333;
+		}
+		
+		a:hover {
+			color: #999999;
+		}
+		
+		a:active {
+			color: #999999;
+		}
+		
+		.styleTopic {
+			font-size: 10px;
+			margin-top: 1px;
+			margin-bottom: 1px;
+		}
+		
+		.styleSpeaker {
+			font-size: 14px;
+			margin-top: 5px;
+			margin-bottom: 1px;
+		}
+		
+		.styleTitle {
+			margin-top: 1px;
+			margin-right: 0px;
+			margin-bottom: 1px;
+			margin-left: 5px;
+			color: #000000;
+			font-size: 12px;
+		}
+		
+		.style2 {
+			color: #000000
+		}
+		
+		-->
+		
+		.header {
+			padding-top: 10px;
+			padding-bottom: 10px;
+			margin-left: 100px;
+			margin-right: 100px;
+			background-color: #666666;
+			color: #FFFFFF;
+			display: grid;
+			grid-template-columns: repeat(10, 1fr);			
+		}
+
+		.date {
+			grid-column-start: 1;
+			grid-column-end: 2;			
+		}
+
+		.topic {
+			grid-column-start: 2;
+			grid-column-end: 3;
+		}
+		.speaker {
+			grid-column-start: 3;
+			grid-column-end: 5;			
+		}
+		.title {
+			grid-column-start: 5;
+			grid-column-end: 10;			
+		}
+
+		.content {
+			padding-top: 10px;
+			padding-bottom: 10px;
+			margin-left: 100px;
+			margin-right: 100px;
+			background-color: #FAF4EB;
+			display: grid;
+			grid-template-columns: repeat(10, 1fr);
+			margin-top: 5px;
+		}
+
+		.content_date, .content_topic, .content_speaker {
+			display: flex;             
+			align-items: center;       
+			justify-content: center;
+		}
+
+		.content_date {
+			grid-column-start: 1;
+			grid-column-end: 2;
+		}
+		.content_topic {
+			grid-column-start: 2;
+			grid-column-end: 3;
+		}
+		.content_speaker {
+			grid-column-start: 3;
+			grid-column-end: 5;		
+		}
+		.content_title {
+			grid-column-start: 5;
+			grid-column-end: 10;	
+			overflow: hidden;
+			white-space: normal;      
+			word-wrap: break-word;   
+		}
+
+	</style>	
+</head>
+
+<body>
+	<div align="center">
+		<table>
+			<tr>
+				<td colspan="4" bgcolor="#FFFFFF">
+					<div align="center">
+						<img src="Title2023.png" width="826" height="151" border="0" usemap="#Map" />
+					</div>
+				</td>
+			</tr>			
+		</table>
+		<map name="Map" id="Map">
+			<area shape="rect" coords="753,130,823,147" href="Schedule.htm?year=2022" target="_self" />
+			<area shape="rect" coords="673,130,744,147" href="Schedule2024.htm" target="_self" />
+		</map>
+		
+		<div class="header">
+			<div class="date">DATE</div>
+			<div class="topic">TOPIC</div>
+			<div class="speaker">SPEAKER</div>
+			<div class="title">TITLE</div>
+		</div>
+
+		<div class="content_container">
+
+		</div>
+	</div>
+
+	
+	<script src="js/speaker2023.js"></script>
+	<script src="js/reportTitle2023.js"></script>
+	<script src="js/test.js"></script>
+</body>
+
+</html>
