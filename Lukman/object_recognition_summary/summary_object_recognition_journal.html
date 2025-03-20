@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<center><h2>An Object Recognition System based on Convolutional Neural Networks and Angular Resolutions</h2>
+<p><i>Achmad Lukman and Chuan-Kai Yang</i></p>
+<p>Department of Information Management</br>
+National Taiwan University of Science and Technology</br>
+No. 43, Sec. 4, Keelung Road</br>
+Taipei, 106, Taiwan</br>
+D10509802@mail.ntust.edu.tw, ckyang@cs.ntust.edu.tw</p></center>
+
+<p>Abstract</p>
+<p align="Justify">The development of 3D object recognition often requires a huge amount of data in the training process, especially when deep learning methods are involved so that the training can be convergent. The problem is that the availability of free 3D object datasets is usually quite limited, so some researchers have proposed several techniques to overcome this problem. In this work, we propose a novel algorithm, making use of angular resolutions and convolutional neural networks for 3D object recognition, and it collects image shapes or contours from real objects by placing them on a rotating display to record the appearances from multiple angular views. The chosen angular resolution is in the range of 0-180 degrees, and the selection of viewing angle is done by a binary search. We have conducted a comparative experiment on the accuracy of 6 well-known network architectures, including GoogleNet, CaffeNet, SqueezeNet, ResNet18, ResNet32, and ResNet50, to see how far these architecture networks can adapt to the angular resolution techniques that we propose for the classification of objects outside the lab environment. We also propose another way with the use of incremental learning, where we integrate our proposed method that uses GoogleNet model with two existing weights pretrained models, i.e., AlexNet and VGG16. In other words, our proposed method helps address the limitations of other models with the weights of existing pre-trained methods to recognize new classes that were not recognized.</p>
+<p>Angular Resolution Algorithm</p>
+
+<i>Algorithm 1 : Train CNN with Angular resolution
+<br>Input : Angle (360 degree), T(target) = 0, 99
+<br>Output : W(Angular Resolution), Qtesting(Accuracy Testing)
+<br>1:&emsp;Do while Qtesting <= T
+<br>2:&emsp;&emsp;Mid <- Angle/2
+<br>3:&emsp;&emsp;Take Image according to Mid number using Rotating Display
+<br>4:&emsp;&emsp;All Image from rotating Display will be Segmented using Grabcut
+<br>5:&emsp;&emsp;Training of CNN using CaffeNet model <- Image segmentation + Data Augmentation
+<br>6:&emsp;&emsp;If T <= Qtesting then
+<br>7:&emsp;&emsp;&emsp;W <- Mid
+<br>8:&emsp;&emsp;&emsp;Exit Do
+<br>9:&emsp;&emsp;Elseif T > Qtesting then
+<br>10:&emsp;&emsp;&emsp;Angle <-  Mid
+<br>11:&emsp;&emsp;&emsp;W <-  Angle
+<br>12:&emsp;&emsp;&emsp;If Angle = 45 then
+<br>13:&emsp;&emsp;&emsp;&emsp;Angle <- 30
+<br>14:&emsp;&emsp;&emsp;Elseif Angle = 15 then
+<br>15:&emsp;&emsp;&emsp;&emsp;Exit Do
+<br>16:&emsp;&emsp;endif 
+<br>17:&emsp;loop
+</i></br>
+<table border="0" bordercolor="none" align="center">
+        <tr><td colspan="2"><img src="figure_1.png" alt="" border=0 height=350 width=350></img></td>
+        </tr>
+		<tr>
+            <td colspan="3">Figure 1: The number of images for the case of 90 degree.</td> 
+        </tr><tr><td>&emsp;&emsp;&emsp;</td></tr>
+		<tr><td colspan="3"><img src="figure_2.png" alt="" border=0 height=250 width=450></img></td>
+        </tr>
+		<tr>
+            <td colspan="3">Figure 2: The device makes use of angular resolutions.</td> 
+        </tr><tr><td>&emsp;&emsp;&emsp;</td></tr>
+		<tr><td colspan="3"><img src="figure_3.png" alt="" border=0 height=400 width=500></img></td>
+        </tr>
+		<tr>
+            <td colspan="3">Figure 3:  Proposed system for integrating among GoogleNet weights model (model 3), </br>AlexNet weights pre-trained model (Model 1) and VGG16 weights pre-trained model (Model 2)</td> 
+        </tr>
+</table>
+<p>Result and Discussion</p>
+<table border="0" bordercolor="none" align="center">
+        <tr>
+            <td><img src="fig_6a.png" alt="" border=0 height=300 width=400></img></td>
+            <td><img src="fig_6b.png" alt="" border=0 height=300 width=400></img></td>
+        </tr>
+		<tr>
+            <td align="center">(a)</td>
+            <td align="center">(b)</td>
+        </tr>
+		<tr>
+			<td border=0 height=100 width=300><img src="fig_6c.png" alt="" border=0 height=300 width=400></img></td>
+		</tr>
+		<tr>
+			<td align="center">(c)</td>
+		</tr>
+		<tr>
+            <th colspan="3">Figure 4:  The 15 degree of angular resolution + DA evaluation between without Grabcut segmentation(a) and with Grabcut segmentation(b)</br> for difference 6 network architecture (GoogleNet, CaffeNet, SquezeeNet, ResNet18, ResNet32, ResNet50)</th> 
+        </tr>
+		<tr>
+            <td><img src="fig_7a.png" alt="" border=0 height=300 width=400></img></td>
+            <td><img src="fig_7b.png" alt="" border=0 height=300 width=400></img></td>
+            
+        </tr>
+		<tr>
+            <td align="center">(a)</td>
+            <td align="center">(b)</td>
+        </tr>
+		<tr>
+			<td><img src="fig_7c.png" alt="" border=0 height=300 width=400></img></td>
+            <td border=0 height=100 width=300><img src="fig_7d.png" alt="" border=0 height=300 width=400></img></td>
+		</tr>
+		<tr>
+			<td align="center">(c)</td>
+            <td align="center">(d)</td>
+		</tr>
+		<tr>
+            <th colspan="3">Figure 5: Angular resolution evaluation uses Grabcuts segmentation for datasets outside the lab environment</th> 
+        </tr>
+		
+</table>
+<p>Conclusion and Future Work</p>
+<p align="Justify">The test results show that the novelty of our angular-resolution algorithm can generally be used for object recognition, together with creating a new dataset that was not available, and the effect of choosing different angular resolutions on an object can cause variations in the recognition accuracy of the system. Our results of this study are divided into two scenarios: the first scenario is the classification process of objects taken in the lab using angular resolution without using the Grabcut segmentation, and this scenario compares the three transfer learning models, namely CaffeNet, GoogleNet, and SqueezeNet. The results of this comparison show that GoogleNet is superior in the accuracy of recognition of objects that reaches 98.70% for kiwi, followed by SqueezeNet with the accuracy of 96.81% on kiwi and staples. The second scenario uses the same training data but the testing data is taken from outside the lab, and we add ResNet18, ResNet32 and ResNet50, where the evaluation results show that SqueezeNet, ResNet18 and ResNet32 are better on adapting to datasets outside the lab environment, although the accuracy of the introduction of avocado, guava, banana and apple is still inferior to the accuracy obtained by ResNet18 and ResNet32 on the 15 degree of angular resolution with Grabcut segmentation.
+For further research, we will try to overcome the limitations of this research, that is, to make it more flexible for recognizing more objects.</p>
+
+<p>Compliance with Ethical Standards</p>
+<p align="Justify">This work was supported in part by the Ministry of Science and Technology of Taiwan under the grant MOST 106- 2221-E-011-148-MY3. Conflict of Interest: Both authors have received the aforementioned funding support and both authors have no conflict of interest.</p>
+</body>
+</html>
