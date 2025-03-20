@@ -1,0 +1,341 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=big5">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:新細明體;
+	panose-1:2 2 5 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"\@新細明體";
+	panose-1:2 1 6 1 0 1 1 1 1 1;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+.MsoChpDefault
+	{font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=ZH-TW style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><b><span
+lang=EN-US>Mental Map-Preserving Visualization through a Genetic Algorithm</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US>Mojiborrahman Dehvari, Chuan-Kai Yang and Enrico Armando</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US>2021</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><b><span
+lang=EN-US>Abstract</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US>Visualize information by curating data into a form that makes it
+easier to identify and understand the trends is quite an interesting research
+topic. This research focuses on producing an animation of aesthetically
+pleasing two-dimensional (2D) undirected graphs. The data are further analyzed
+for developing a web-based application giving users the ability to control and
+create the animation of a graph. To make it easier to understand the animation
+of a graph, the changes between the displays of the previous and the following
+periods are set as small as possible, allowing a user to grasp the differences
+of the graph’s structure faster. A genetic algorithm-based undirected graph
+drawing that minimizes both the aesthetic criteria and mental map cost is
+proposed in this research to tackle this problem. Furthermore, based on our
+experiments, we could find the best period to start with, so we do not
+necessarily need to start from the first period to calculate the animation
+result. Our experiment results proved that a smoother animation could be
+achieved, and information is better preserved throughout the animation. Our
+algorithm can be applied to every dataset, as long as the relationship between
+two entities can be calculated, and we used a video game dataset as our main
+dataset.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><b><span
+lang=EN-US>Method</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'>
+
+<table cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=47 height=0></td>
+ </tr>
+ <tr>
+  <td></td>
+  <td><img width=497 height=298
+  src="Mental_Map_Preserving_Visualization_through_a_Genetic_Algorithm.files/image001.jpg"></td>
+ </tr>
+</table>
+
+<br clear=ALL>
+<span lang=EN-US>Our graph is a pictorial representation of the vertices and
+edges of a graph, shown in Figure 1, where a vertex represents an item or
+entity, while an edge is used to represent the relationship or similarity
+between two objects.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US>the system architecture is shown in Figure 2.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'>
+
+<table cellpadding=0 cellspacing=0 align=left>
+ <tr>
+  <td width=75 height=0></td>
+ </tr>
+ <tr>
+  <td></td>
+  <td><img width=413 height=298
+  src="Mental_Map_Preserving_Visualization_through_a_Genetic_Algorithm.files/image002.jpg"></td>
+ </tr>
+</table>
+
+<br clear=ALL>
+</p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US>the webserver will receive an input filter as a request from the front
+end and retrieve the necessary data from the database during the calculations.
+The retrieved data will then be calculated using our algorithm to produce the
+best position for each node period by period and then stored in the database.
+Our simplification algorithm works by combining several similar nodes (nodes of
+the same genre) into one larger node by checking it against a threshold.
+(figure 3)</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><img
+width=596 height=298
+src="Mental_Map_Preserving_Visualization_through_a_Genetic_Algorithm.files/image003.jpg"><br
+clear=ALL>
+</p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US>The dataset used for this research was collected from GameFAQs.com
+on 24 April 2019. It consists of 63,952 games with English titles from 1985 to
+2019. we defined the relationship between each data (node) using similarity
+calculations. The higher the value, the more similar the two nodes are. The Equation
+below shows how we define our similarity function.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US><img width=624 height=61 id="Picture 4"
+src="Mental_Map_Preserving_Visualization_through_a_Genetic_Algorithm.files/image004.jpg"></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US>Figure 4 is an example to show our transition animation procedure
+from the first period to the next period. The user can see the removal and
+insertion changes much better than changing them simultaneously, thus
+preserving the user’s mental map.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><img
+width=575 height=413
+src="Mental_Map_Preserving_Visualization_through_a_Genetic_Algorithm.files/image005.jpg"><br
+clear=ALL>
+</p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US>the input of our GA algorithm is a graph G = (V, E), where V is the
+set of nodes, and E is the set of edges. We use several aesthetic criteria that
+will be minimized, and they are composed by a weighted sum. A user will define
+these weights to adjust the graph drawing. equation (2) is our fitness
+function.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US><img width=624 height=50 id="Picture 6"
+src="Mental_Map_Preserving_Visualization_through_a_Genetic_Algorithm.files/image006.jpg"></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US>The genetic operator in this paper consists of three methods:
+Crossover, Mutation, and Inversion. We implemented a relinking path algorithm
+at each generation with a certain percentage. With this research, we want to
+verify if a path relinking could work with GA to get a better drawing result.
+Figure 5 </span><img width=549 height=230
+src="Mental_Map_Preserving_Visualization_through_a_Genetic_Algorithm.files/image007.jpg"><br
+clear=ALL>
+<span lang=EN-US>shows how our relinking path process works.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><b><span
+lang=EN-US>Experimental Results </span></b></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US>We started our experiment by using several methods to consider the
+weight of the mental maps. The first method was to consider the mental map
+weight at the initial generation. The second method was to consider the mental
+map weight when the current generation reached a certain point. The last method
+was to consider changing the mental map weight gradually across generations.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'>
+
+<table cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=18 height=0></td>
+ </tr>
+ <tr>
+  <td></td>
+  <td><img width=584 height=326
+  src="Mental_Map_Preserving_Visualization_through_a_Genetic_Algorithm.files/image008.jpg"></td>
+ </tr>
+</table>
+
+<br clear=ALL>
+<span lang=EN-US>The results in Figure 6 are from several methods with
+different timings to start considering the mental map cost and are shown as the
+fitness values of the best solution in each generation.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><img
+width=686 height=134
+src="Mental_Map_Preserving_Visualization_through_a_Genetic_Algorithm.files/image009.jpg"><br
+clear=ALL>
+<span lang=EN-US>Our following experimental results were about implementing the
+Path Relinking (PR) algorithm in our system, understanding of using mental map
+preserve, and procrustes statistical analysis.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'>
+
+<table cellpadding=0 cellspacing=0 align=left>
+ <tr>
+  <td width=30 height=0></td>
+ </tr>
+ <tr>
+  <td></td>
+  <td><img width=553 height=298
+  src="Mental_Map_Preserving_Visualization_through_a_Genetic_Algorithm.files/image010.png"></td>
+ </tr>
+</table>
+
+<br clear=ALL>
+</p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><img
+width=559 height=298
+src="Mental_Map_Preserving_Visualization_through_a_Genetic_Algorithm.files/image011.jpg"><br
+clear=ALL>
+</p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'>
+
+<table cellpadding=0 cellspacing=0 align=left>
+ <tr>
+  <td width=9 height=0></td>
+ </tr>
+ <tr>
+  <td></td>
+  <td><img width=578 height=470
+  src="Mental_Map_Preserving_Visualization_through_a_Genetic_Algorithm.files/image012.jpg"></td>
+ </tr>
+</table>
+
+<br clear=ALL>
+</p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'>
+
+<table cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=24 height=0></td>
+ </tr>
+ <tr>
+  <td></td>
+  <td><img width=530 height=298
+  src="Mental_Map_Preserving_Visualization_through_a_Genetic_Algorithm.files/image013.jpg"></td>
+ </tr>
+</table>
+
+<br clear=ALL>
+<span lang=EN-US>In our experimental results, we found that, by considering all
+possible starting periods, the system can look for the best period to start
+with, i.e., it is not always needed to start with the first period.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'>
+
+<table cellpadding=0 cellspacing=0 align=left>
+ <tr>
+  <td width=18 height=0></td>
+ </tr>
+ <tr>
+  <td></td>
+  <td><img width=564 height=298
+  src="Mental_Map_Preserving_Visualization_through_a_Genetic_Algorithm.files/image014.png"></td>
+ </tr>
+</table>
+
+<br clear=ALL>
+</p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><b><span
+lang=EN-US>Conclusions </span></b></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US>In this research, we developed a web-based application that can
+produce and show the smooth animation of multiple undirected graphs. We
+proposed a mental map-preserving algorithm for an undirected graph using a GA
+that can be applied to all datasets as long as the relationship can be
+calculated and develop a web-based application for users to control and create
+the animation of graphs. Our research concluded that a smoother animation can
+be achieved by preserving a user’s mental map, and the information was indeed
+better preserved throughout the animation. Future research could be done to
+reduce the calculation time and to use more efficient programming languages
+such as Python to help improve the mental map preservation, especially when too
+many nodes are involved.</span></p>
+
+</div>
+
+</body>
+
+</html>
